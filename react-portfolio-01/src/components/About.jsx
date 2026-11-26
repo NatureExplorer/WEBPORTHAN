@@ -1,28 +1,28 @@
 import React from "react";
-import { Github, Linkedin, Mail, Code, Palette, Smartphone, ExternalLink } from 'lucide-react';
+import { ChartNoAxesCombined, Workflow , Brain, Users} from 'lucide-react';
 
 const About = ({ hasAnimated }) => {
-    const features = [
-        {
-            icon: <Code className="w-8 h-8 mb-4 text-black" />,
-            title: "Clean Code",
-            description: "Writing maintainable, scalable code following best practices"
+        const features = [
+            {
+            icon: <ChartNoAxesCombined className="w-8 h-8 mb-4 text-black" />,
+            title: "Data Enthusiast",
+            description: "Passionate about turning data into insights."
         },
         {
-            icon: <Palette className="w-8 h-8 mb-4 text-black" />,
-            title: "UI/UX Design",
-            description: "Creating intuitive interfaces with attention to detail"
+            icon: <Workflow className="w-8 h-8 mb-4 text-black" />,
+            title: "Pipeline Builder",
+            description: "Building reliable and automated data workflows."
         },
         {
-            icon: <Smartphone className="w-8 h-8 mb-4 text-black" />,
-            title: "Responsive",
-            description: "Mobile-first approach ensuring great experience on all devices"
+            icon: <Brain className="w-8 h-8 mb-4 text-black" />,
+            title: "Analytical Thinker",
+            description: "Solving problems through data-driven analysis."
         },
         {
-            icon: <ExternalLink className="w-8 h-8 mb-4 text-black" />,
-            title: "Performance",
-            description: "Optimizing for fast load times and smooth interactions"
-        }
+            icon: <Users className="w-8 h-8 mb-4 text-black" />,
+            title: "Team Collaborator",
+            description: "Working well with others toward shared goals."
+        },
     ];
 
     return (
@@ -33,18 +33,19 @@ const About = ({ hasAnimated }) => {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
                             <p className="text-lg text-gray-700 mb-6">
-                                I'm a passionate frontend developer with 5+ years of experience creating exceptional digital experiences.
-                                I specialize in React, TypeScript, and modern CSS frameworks to build scalable, performant applications.
+                                I am a Data Science graduate from Institut Teknologi Sumatera (ITERA) with a strong focus on Data Analytics and Data Engineering. 
+                                I have gained hands-on experience as a data analyst intern, census officer, and practicum teaching assistant.
+                                Alongside this, I have worked on projects ranging from building automated ETL pipelines. 
                             </p>
                             <p className="text-lg text-gray-700 mb-6">
-                                My journey started with a curiosity for how websites work, and it has evolved into a love for crafting
-                                pixel-perfect interfaces that users enjoy interacting with.
+                                I am eager to build a career as a data analyst or data engineer, designing reliable data pipelines and turning raw data into insights that support better decisions. 
+                                My core competencies include Python, SQL, R, Apache Airflow, Apache Spark, Docker, Power BI, and Looker Studio, supported by analytical thinking, leadership, teamwork, and project management skills.
                             </p>
-                            <div className="flex space-x-4">
+                            {/* <div className="flex space-x-4">
                                 <Github className="w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors" />
                                 <Linkedin className="w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors" />
                                 <Mail className="w-6 h-6 text-gray-600 hover:text-black cursor-pointer transition-colors" />
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="grid grid-cols-2 gap-6">

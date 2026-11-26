@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { AArrowDown, ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { heroData } from '../data/hero';
 
 const Hero = ({ hasAnimated }) => {
@@ -96,11 +96,12 @@ const Hero = ({ hasAnimated }) => {
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8 animate-fade-in-up delay-300">
                         {heroData.ctaButtons.map((button, index) => (
-                            <a key={index} href={button.href} className={`group relative px-5 py-2.5 rounded-lg transition-all duration-300 font-medium text-sm ${button.variant === 'primary' ? 'bg-black text-white shadow-lg hover:shadow-xl hover:bg-gray-800' : 'border-2 border-black text-black hover:bg-black hover:text-white'}`}>
+                            <a key={index} href={button.download ? `${import.meta.env.BASE_URL}${button.href}` : button.href} download={button.download ? true : undefined} className={`group relative inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg transition-all duration-300 font-medium text-sm ${button.variant === 'primary' ? 'bg-black text-white shadow-lg hover:shadow-xl hover:bg-gray-800' : 'border-2 border-black text-black hover:bg-black hover:text-white'}`}>
                                 {button.variant === 'primary' && (
                                     <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 )}
                                 <span className={button.variant === 'primary' ? 'relative z-10' : ''}>
+                                    {button.download && <Download className="inline w-4 h-4 mr-2" aria-hidden="true" />}
                                     {button.text}
                                 </span>
                             </a>
@@ -130,12 +131,12 @@ const Hero = ({ hasAnimated }) => {
                     </div>
 
                     {/* Scroll Indicator */}
-                    <div className="animate-bounce">
+                    {/* <div className="animate-bounce">
                         <button onClick={scrollToAbout} className="group flex flex-col items-center text-gray-600 hover:text-black transition-colors cursor-pointer">
                             <span className="text-sm mb-2">Learn More</span>
                             <ArrowDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

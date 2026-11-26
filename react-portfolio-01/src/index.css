@@ -47,3 +47,58 @@
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+@keyframes skills-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes skills-scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.skills-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: skills-scroll 28s linear infinite;
+}
+
+.skills-marquee-track-reverse {
+  animation-name: skills-scroll-reverse;
+}
+
+.skills-marquee:hover .skills-marquee-track,
+.skills-marquee:focus-within .skills-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-marquee-track,
+  .skills-marquee-track-reverse {
+    width: 100%;
+    flex-wrap: wrap;
+    animation: none;
+    justify-content: center;
+  }
+
+  .skills-marquee-set[aria-hidden="true"] {
+    display: none;
+  }
+
+  .skills-marquee-set:not([aria-hidden="true"]) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

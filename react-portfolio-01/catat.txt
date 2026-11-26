@@ -1,0 +1,18 @@
+section work experience
+1. card antar work agar lebih sedikit berdekatan. lebih lanjut misal untuk card work urutan dua dimulai titik nya dari 1/5 dari tinggi card pertama yang diukur dari bawah. agar tidak terlalu banyak space kosong karena zig-zag
+2. rapikan untuk poin-poin yang ada pada card kiri agar lebih rapih 
+
+section ed and org
+1. bagian education ada dua opsi tambah ed ato
+2. bagian CEO HMSD (jelasin CEO ato perhatikan itu)
+
+section project
+1. bagian tautan projek bisa ditambahkan lagi ke popup kotak sama nama dari tautan
+2. menambahkan halaman selanjutnya untuk detail projek?
+
+section certif
+1. bisa di zoom (done)
+
+
+1. navigasi ditambahkan sedang ada dimana (done)
+2. tambahin warna untuk menandakan satu kesatuan.
