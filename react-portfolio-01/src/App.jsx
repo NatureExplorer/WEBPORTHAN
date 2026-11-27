@@ -16,6 +16,7 @@ import { ImageZoomProvider } from "./components/ImageZoom";
 import { workExperiences } from "./data/workExperience";
 import { organizationalExperiences } from "./data/organizationalExperience";
 import { educations } from "./data/education";
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   const hasAnimated = useIntersectionObserver();
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <ImageZoomProvider>
       <div className="min-h-screen bg-white text-black">
+        <Analytics />
         <Navigation />
         <Hero hasAnimated={hasAnimated} />
         <About hasAnimated={hasAnimated} />
