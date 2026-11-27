@@ -42,7 +42,7 @@ export const heroData = {
         // },
         {
             text: "Download Resume",
-            href: "//drive.google.com/file/d/1eLqz8jVBBvn6CvGqSZpeUBTGHKoAIPXb/view?usp=sharing",
+            href: "//drive.google.com/file/d/14eLm7t5RvgizPwu9B6AGEy9JW76b-jIR/view?usp=sharing",
             variant: "secondary",
             download: true
         }
